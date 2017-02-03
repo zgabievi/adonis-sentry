@@ -1,5 +1,6 @@
 {
   "name": "adonis-sentry",
+  "version": "0.0.0",
   "description": "AdonisJs integration for Sentry (https://sentry.io)",
   "main": "index.js",
   "directories": {
