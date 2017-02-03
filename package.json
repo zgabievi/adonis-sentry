@@ -1,0 +1,61 @@
+{
+  "name": "adonis-sentry",
+  "description": "AdonisJs integration for Sentry (https://sentry.io)",
+  "main": "index.js",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec test",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha test",
+    "lint": "standard src/*.js test/*.js providers/*.js"
+  },
+  "standard": {
+    "global": [
+      "describe",
+      "it",
+      "before",
+      "use",
+      "make"
+    ]
+  },
+  "keywords": [
+    "adonis",
+    "adonis-sentry",
+    "exception",
+    "sentry.io"
+  ],
+  "author": "zgabievi",
+  "license": "MIT",
+  "devDependencies": {
+    "adonis-fold": "^3.0.3",
+    "chai": "^3.5.0",
+    "co": "^4.6.0",
+    "co-mocha": "^1.1.3",
+    "coveralls": "^2.11.15",
+    "cz-conventional-changelog": "^1.2.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "node-exceptions": "^1.0.3",
+    "sinon": "^1.17.6",
+    "standard": "^8.6.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "raven": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgabievi/adonis-sentry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zgabievi/adonis-sentry/issues"
+  },
+  "homepage": "https://github.com/zgabievi/adonis-sentry#readme",
+  "version": "0.0.1"
+}
